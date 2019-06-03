@@ -122,6 +122,7 @@ then
 fi
 
 p=$GOPATH/src/$name
+echo "-----> Dir Name : ${p}"
 mkdir -p $p
 cp -R $build/* $p
 
@@ -148,7 +149,7 @@ then
 fi
 
 unset GIT_DIR # unset git dir or it will mess with goinstall
-echo "------> Created dir : ${p}"
+echo "-----> Created dir : ${p}"
 cd $p
 if test -e $build/Godeps
 then
