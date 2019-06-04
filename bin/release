@@ -16,5 +16,6 @@ config_vars:
   GOROOT: /app/.goroot
   GOPATH: /app/.go
 default_process_types:
-  web: revel run $name $env 80
+  web: revel run $name $env \$PORT
+#  web: revel run $name $env 80
 EOF
